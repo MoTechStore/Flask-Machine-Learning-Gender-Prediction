@@ -1,1 +1,1 @@
-using NaiveBayes and Decision Tree algorithm.
+This repository contains source codes for supervised machine learning deployed on Flask python web framework. It contains full tutorials series at YouTube. Actuallly, whenever you need a help, visit our YouTube channel, comment where you need a help and i wlll be there for you.
