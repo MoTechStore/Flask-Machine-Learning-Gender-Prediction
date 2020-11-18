@@ -1,0 +1,36 @@
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.min.css')}}">
+<div class="container">
+    <center><h2 style="color:#008000; word-spacing: 70px; font-weight: bold; font-style: italic; font-size:300%; letter-spacing: 7px;">ML Gender Prediction</h2></center>      
+  </div>
+
+       <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+        <div class="big" align="center">
+    <form action="{{url_for('predict')}}" method="POST">
+      <h3 style="color:#008000; font-weight: bold;" class="text-primary">Enter Name To Predict</h3>
+      <input class="form-control" type = 'text' name = 'namequery'>
+          <br>
+      <input style="color:#008000" type="submit" name="" value="Predict" class="btn btn-default">
+    </form>
+  </div>
+</div>
+      
+ 
+</div>
+      </div>
+    </div>
+
+
+
+
+{% endblock %}
+
+ <!-- Allows Javascripts and other styles to be inclusive in bootstrap -->
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='css/styles.min.css')}}">
+<link rel="script"
+      href="{{url_for('.static', filename='js/app.min.js')}}">
+
